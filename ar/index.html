@@ -29,11 +29,82 @@
 </head>
 
 <body style="font-family: 'Almarai';">
-    <!-- <div class="loading">
-
-        <img class="absolute" src="https://www.bing.com/images/search?view=detailV2&ccid=1s1RUcBH&id=1DB7050761C1D00981149473FBD0708F59DC1145&thid=OIP.1s1RUcBHZdGZLt_eFEgwaAHaHa&mediaurl=https%3a%2f%2fmedia1.tenor.com%2fimages%2fd6cd5151c04765d1992edfde14483068%2ftenor.gif%3fitemid%3d5662595&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d6cd5151c04765d1992edfde14483068%3frik%3dRRHcWY9w0PtzlA%26pid%3dImgRaw%26r%3d0&exph=498&expw=498&q=loading+gif&simid=608056241637370086&FORM=IRPRST&ck=EAFE5F52E8DE5BF343218A2EFC396669&selectedIndex=6&ajaxhist=0&ajaxserp=0" alt="">
-    </div> -->
     <header>
+        <div class="sm:flex justify-between items-center md:px-24 px-4 lg:px-[200px] py-6 hidden">
+            <a href="#">
+                <img src="../public/logo-taw.png" class="w-[100px] self-start" alt="" srcset="" />
+            </a>
+            <div class="items flex items-center">
+                <a href="#"
+                    class="block text-gray-700 font-bold transition-colors duration-300 md:px-6 hover:text-amber-500">الرئيسية</a>
+                <a href="#about"
+                    class="block text-gray-700 font-bold transition-colors duration-300 md:px-6 hover:text-amber-500">
+                    عن توجيه
+                </a>
+                <a href="#services"
+                    class="block text-gray-700 font-bold transition-colors duration-300 md:px-6 hover:text-amber-500">
+                    الخدمات
+                </a>
+                <a href="#pricing"
+                    class="block text-gray-700 font-bold transition-colors duration-300 md:px-6 hover:text-amber-500">
+                    الأسعار
+                </a>
+                <a href="#profile"
+                    class="block text-gray-700 font-bold transition-colors duration-300 md:px-6 hover:text-amber-500">
+                    المعرض
+                </a>
+                <a href="/""
+                    class=" relative flex items-center z-10 block py-2 px-4 text-gray-700 bg-white border
+                    border-gray-300 rounded-md focus:border-orange-200 focus:ring-opacity-40 dark:focus:ring-opacity-40
+                    focus:ring-orange-300 dark:focus:ring-orange-200 focus:ring focus:outline-none">
+                    <img src="../public/uk.png" width="20" alt="">
+                    <span class="mx-1">
+                        English
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex px-4 py-2 justify-between items-center sm:hidden md:hidden ">
+            <a href="#"
+                class="text-white first-letter:text-primary text-4xl font-bold first-letter:uppercase">
+                <img src="../public/logo-taw.png" class="w-[100px] self-start" alt="" srcset="" />
+            </a>
+            <a href="#">
+                <button class="menu-button">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4H0V0H24V4ZM24 8H0V12H24V8ZM24 16H0V20H24V16Z" fill="black" />
+                    </svg>
+                </button>
+                <button class="menu-close hidden">
+                    <svg class="w-6 h-6 text-blaxk " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </a>
+        </div>
+
+        <div class="md:hidden hidden menu-items px-4 py-2 transition duration-300 ease-in-out" style="transition: height 0.35s ease-in-out !important">
+            <a href="#" class="text-gray-500 px-4 block py-2">الرئيسية</a>
+            <a href="#about" class="text-gray-500 px-4 block py-2">عن توجيه</a>
+            <a href="#services" class="text-gray-500 px-4 block py-2">الخدمات</a>
+            <a href="#pricing" class="text-gray-500 px-4 block py-2">الأسعار</a>
+            <a href="#profile" class="text-gray-500 px-4 block py-2">المعرض</a>
+            
+            <a href="/""
+                class=" relative flex items-center z-10 block py-2 px-4 text-gray-700 bg-white border
+                border-gray-300 rounded-md focus:border-orange-200 focus:ring-opacity-40 dark:focus:ring-opacity-40
+                focus:ring-orange-300 dark:focus:ring-orange-200 focus:ring focus:outline-none">
+                <img src="../public/uk.png" width="20" alt="">
+                <span class="mx-1">
+                    English
+                </span>
+            </a>
+        </div>
+    </header>
+    <!-- <header>
         <nav class="bg-white-400 flex items-center justify-between lg:justify-around px-6 py-2 mx-auto text-white">
             <a href="#">
                 <img src="../public/logo-taw.png" class="w-[100px] self-start" alt="" srcset="" />
@@ -62,7 +133,7 @@
             ]"
                 class="absolute inset-x-0 z-30 w-full px-6 py-8 mt-8 space-y-6 transition-all duration-300 ease-in-out bg-white top-16 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:space-y-0 md:-mx-6 md:flex md:items-center">
                 <a href="#"
-                    class="block text-gray-700 font-bold transition-colors duration-300 md:px-6 hover:text-amber-500">الرئيسية</a>
+                    class="block text-gray-700 font-bold transition-colors duration-300 md:px-6 hover:text-amber-500"></a>
                 <a href="#about"
                     class="block text-gray-700 font-bold transition-colors duration-300 md:px-6 hover:text-amber-500">
                     عن توجيه
@@ -91,7 +162,7 @@
                 </a>
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <main>
         <div class="overlay">
@@ -888,7 +959,7 @@
         </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

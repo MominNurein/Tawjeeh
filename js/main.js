@@ -1,17 +1,31 @@
-var button = document.querySelector('.navButton')
-var button2 = document.querySelector('.navButton2')
-var navItems = document.querySelector('.navItems')
-button.addEventListener("click", () => {
-  navItems.style.height = "260px"
-  button.classList.toggle("hidden")
-  button2.classList.toggle("hidden")
-})
-button2.addEventListener("click", () => {
-  navItems.style.height = "0px"
-  button.classList.toggle("hidden")
-  button2.classList.toggle("hidden")
-})
+// var button = document.querySelector('.navButton')
+// var button2 = document.querySelector('.navButton2')
+// var navItems = document.querySelector('.navItems')
+// button.addEventListener("click", () => {
+//   navItems.style.height = "260px"
+//   button.classList.toggle("hidden")
+//   button2.classList.toggle("hidden")
+// })
+// button2.addEventListener("click", () => {
+//   navItems.style.height = "0px"
+//   button.classList.toggle("hidden")
+//   button2.classList.toggle("hidden")
+// })
 
+btn = document.querySelector('button.menu-button');
+btn_close = document.querySelector('button.menu-close');
+items = document.querySelector('.menu-items');
+
+btn.addEventListener("click",function(){
+    items.classList.toggle("hidden");
+    this.classList.toggle("hidden");
+    btn_close.classList.toggle("hidden");
+});
+btn_close.addEventListener("click",function(){
+    items.classList.toggle("hidden");
+    this.classList.toggle("hidden");
+    btn.classList.toggle("hidden");
+});
 
 const servicesList = [
     'Typing a new job offer letter',
@@ -36,27 +50,6 @@ const servicesList = [
     'Distribute & Deliver Awareness Leaflets to Employees & Employers.'
 ]
 
-const servicesListArabic = [
-    'طباعة رسالة عرض العمل',
-    'تجديد تصريح عمل الكتروني أو طباعة عقد العمل',
-    'استلام معاملة تصريح عمل الكتروني جديد و تصريح عمل الكترون',
-    'اصدار بطاقة التوقيع الإلكتروني الجديدة المالك',
-    'طباعة تصريح عمل الكتروني جديد',
-    'غرامة تصريح عمل الكتروني و اشعار الموافقة المبدئية لتصريح العمل',
-    'استبدال بطاقة التوقيع الإلكتروني القديمة ببطاقة التوقيع الإلكتروني الجديدة',
-    'حضور الدورة التوجيهية للعمال',
-    'طباعة جميع البطاقات الذكية',
-    'تفعيل بطاقة التوقيع الإلكتروني الجديدة للمالك – المندوب',
-    'اصدار البطاقة الذكية للمندوب',
-    'معاملة تجديد بطاقة العمل',
-    'توزيع النشرات التوعوية للعمال و أصحاب العمل',
-    'اصدار شهادة العمل للعمال',
-    'تقديم خدمات تسليم تصاريح العمل و عقود العمال',
-    'طباعة طلب اشعار الموافقة المبدئية لتصريح العمل المؤقت',
-    'استلام اشعار الموافقة المبدئية لتصريح عمل مؤقت / اختبار',
-    'استلام معاملة الى سحب بلاغ هروب',
-    'طلب الغاء تصريح عمل الكتروني لعامل لديه قضية عمالية',
-]
 const pricedServices = [
     {
         name: 'Typing a new job offer letter',

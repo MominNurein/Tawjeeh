@@ -12,27 +12,12 @@
 
 <body>
     <header>
-        <nav class="flex block justify-between items-center md:justify-between py-2 px-10 lg:px-[200px] items-center bg-white">
-            <a onclick="print()" href="#"
+        <div class="sm:flex justify-between items-center md:px-24 px-4 lg:px-[200px] py-6 hidden">
+            <a href="#"
                 class="text-white first-letter:text-primary text-4xl font-bold first-letter:uppercase">
                 <img src="../public/logo-taw.png" class="w-[100px] self-start" alt="" srcset="" />
             </a>
-            <div class="flex justify-between items-center pb-2">
-                <div class="icon cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 text-slate-700 navButton block sm:hidden">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 hidden navButton2 navButton text-slate-700">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </div>
-            </div>
-            <ul class="flex flex-col md:flex-row md:flex items-center navItems sm:h-full md:g-full ps-4 h-0 text-slate-800 transition duration-1000 ease-in-out"
-                style="align-items: center;overflow: hidden;  transition: height 0.35s ease-in-out;
-              ">
+            <div class="items flex items-center">
                 <a href="#"
                     class="block text-gray-700 font-bold transition-colors duration-300 md:px-6 hover:text-amber-500">Home</a>
                 <a href="#about"
@@ -60,8 +45,47 @@
                         العربية
                     </span>
                 </a>
-            </ul>
-        </nav>
+            </div>
+        </div>
+
+        <div class="flex px-4 py-2 justify-between items-center sm:hidden md:hidden ">
+            <a href="#"
+                class="text-white first-letter:text-primary text-4xl font-bold first-letter:uppercase">
+                <img src="../public/logo-taw.png" class="w-[100px] self-start" alt="" srcset="" />
+            </a>
+            <a href="#">
+                <button class="menu-button">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4H0V0H24V4ZM24 8H0V12H24V8ZM24 16H0V20H24V16Z" fill="black" />
+                    </svg>
+                </button>
+                <button class="menu-close hidden">
+                    <svg class="w-6 h-6 text-blaxk " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </a>
+        </div>
+
+        <div class="md:hidden hidden menu-items transistion duration-300 px-4 py-2 transition duration-300 ease-in-out">
+            <a href="#" class="text-gray-500 px-4 block py-2">Home</a>
+            <a href="#about" class="text-gray-500 px-4 block py-2">About Us</a>
+            <a href="#services" class="text-gray-500 px-4 block py-2">Services</a>
+            <a href="#pricing" class="text-gray-500 px-4 block py-2">Pricing</a>
+            <a href="#location" class="text-gray-500 px-4 block py-2">Location</a>
+            
+            <a href="/ar/""
+                class=" relative flex items-center z-10 block py-2 px-4 text-gray-700 bg-white border
+                border-gray-300 rounded-md focus:border-orange-200 focus:ring-opacity-40 dark:focus:ring-opacity-40
+                focus:ring-orange-300 dark:focus:ring-orange-200 focus:ring focus:outline-none">
+                <img src="./public/uae.jpg" width="20" alt="">
+                <span class="mx-1">
+                    العربية
+                </span>
+            </a>
+        </div>
     </header>
 
     <main>
@@ -316,7 +340,7 @@
                     <div
                         class="flex flex-col justify-between items-start px-4 py-4 bg-slate-50 rounded-xl my-2 shadow-md h-[300px]">
                         <div class="flex items-center"><img src="/public/service.png" width="60" alt="">
-                            <h6 class="text-gray-700 font-bold pl-2 py-2">New Electronic work permit &amp; Mission
+                            <h6 class="text-gray-700 font-bold pl-2 py-2 text-xs lg:text-md">New Electronic work permit &amp; Mission
                                 Electronic Work Permit application</h6>
                         </div>
                         <div class="bg-orange-100 w-[100%] h-[1px] my-1"></div>
